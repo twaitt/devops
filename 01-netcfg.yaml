@@ -1,0 +1,37 @@
+#sudo nano /etc/netplan/01-netcfg.yaml
+
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    ens33:
+      dhcp4: no
+      dhcp6: no
+      addresses: [192.168.1.100/24]
+      gateway4: 192.168.1.1
+      nameservers:
+        addresses: [1.1.1.1, 1.0.0.1]
+        
+# Google
+# [8.8.8.8, 8.8.4.4]
+
+# Quad9
+# [9.9.9.9, 149.112.112.112]
+
+# OpenDNS Home
+# [208.67.222.222, 208.67.220.220]
+
+# Cloudflare
+# [1.1.1.1, 1.0.0.1]
+
+# CleanBrowsing
+# [185.228.168.9, 185.228.169.9]
+
+# Verisign
+# [64.6.64.6, 64.6.65.6]
+
+# Alternate DNS
+# [198.101.242.72, 23.253.163.53]
+
+# AdGuard DNS
+# [176.103.130.130, 176.103.130.131]
