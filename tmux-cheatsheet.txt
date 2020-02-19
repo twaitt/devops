@@ -1,0 +1,27 @@
+New session
+tmux new -s name
+
+Show sessions
+tmux ls
+
+Attach to last session
+tmux a
+
+Attach to session with name
+tmux a -t name
+
+Delete session
+tmux kill-ses -t name
+
+Kill all sessions but current
+tmux kill-session -a
+
+Rename session
+Ctrl + b $
+
+Detach from session
+Ctrl + b d
+
+Move to pren and next session
+Ctrl + b (
+Ctrl + b )
